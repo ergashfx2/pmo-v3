@@ -7,6 +7,7 @@ from rest_framework.permissions import IsAuthenticated
 from .permissions.permissions import IsProfileOwner
 from .serializers import ProfileSerializer
 
+
 class ProfilesView(ListAPIView):
     queryset = Profile.objects.all()
     permission_classes = [IsAuthenticated]
@@ -15,13 +16,13 @@ class ProfilesView(ListAPIView):
 
 class UpdateProfile(UpdateAPIView):
     queryset = Profile.objects.all()
-    permission_classes = [IsAuthenticated,IsProfileOwner]
+    permission_classes = [IsAuthenticated, IsProfileOwner]
     serializer_class = ProfileSerializer
 
 
 class DeleteProfile(DestroyAPIView):
     queryset = Profile.objects.all()
-    permission_classes = [IsAuthenticated,IsProfileOwner]
+    permission_classes = [IsAuthenticated, IsProfileOwner]
     serializer_class = ProfileSerializer
 
 

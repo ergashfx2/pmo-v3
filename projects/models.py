@@ -5,12 +5,11 @@ from django.db import models
 from django.utils import timezone
 from users.choices import blogs, departments
 from .choices import *
-
+from users.models import Team
 
 class Project(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     number = models.CharField(max_length=150)
-    created_by = models.ForeignKey(User,on_delete=models.CASCADE)
     author = models.ManyToManyField(User, related_name='author')
     name = models.CharField(max_length=200)
     blog = models.CharField(max_length=250, choices=blogs)
@@ -19,7 +18,7 @@ class Project(models.Model):
     level = models.CharField(max_length=200, choices=level_choices)
     speed = models.CharField(max_length=200, choices=speed_choices)
     type = models.CharField(max_length=200, choices=type_choices)
-    team = models.ManyToManyField(User, related_name='team')
+    team = models.ForeignKey(Team,on_delete=models.SET_NULL,null=True)
     description = models.TextField()
     termination = models.IntegerField(default=0)
     start_date = models.DateTimeField(auto_now=False)

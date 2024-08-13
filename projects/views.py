@@ -12,8 +12,6 @@ class ProjectsListView(ListAPIView):
 
 
 
-
-
 class CreateProjectView(CreateAPIView):
     queryset = Project.objects.all()
     permission_classes = [IsAuthenticated]

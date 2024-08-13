@@ -36,3 +36,13 @@ class Profile(models.Model):
 
     def __str__(self):
         return self.get_full_name()
+
+
+class Team(models.Model):
+    id = models.UUIDField(default=uuid.uuid4,primary_key=True)
+    name = models.CharField(max_length=200)
+    users = models.ManyToManyField(User,related_name='project_team')
+    external_user = models.CharField(max_length=250,blank=True)
+
+    def __str__(self):
+        return self.name
