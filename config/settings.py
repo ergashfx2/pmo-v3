@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'allauth.account.middleware.AccountMiddleware',
 ]
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-CORS_ALLOWED_ORIGINS = [
+CORS_ORIGIN_WHITELIST  = [
     'https://pmo-v3-front.vercel.app',
 ]
 

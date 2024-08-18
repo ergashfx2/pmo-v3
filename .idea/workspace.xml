@@ -7,32 +7,6 @@
     <list default="true" id="86c4b67c-b7e7-4b81-8434-d94909cfb627" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/middlewares/get_request.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/migrations/0002_remove_task_project.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/migrations/0003_alter_documents_related.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/migrations/0004_rename_comments_comment_rename_documents_document_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/migrations/0005_alter_project_budget_alter_project_spent_money_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/migrations/0006_alter_phase_termination.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/migrations/0007_project_created_by.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/migrations/0008_remove_project_author_alter_project_team_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/migrations/0009_remove_project_author_alter_project_team_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/migrations/0010_remove_project_created_by.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/migrations/0011_remove_project_team_project_team.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0002_profile_user_id.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0003_alter_profile_status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0004_alter_profile_blog_alter_profile_department_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0005_alter_profile_user_id.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0006_team.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +103,7 @@
       <workItem from="1723107454401" duration="62448000" />
       <workItem from="1723575495887" duration="3102000" />
       <workItem from="1723700491625" duration="17653000" />
-      <workItem from="1724005611210" duration="857000" />
+      <workItem from="1724005611210" duration="1451000" />
     </task>
     <servers />
   </component>
