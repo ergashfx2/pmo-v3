@@ -30,3 +30,18 @@ class ProfileView(RetrieveAPIView):
     queryset = Profile.objects.all()
     permission_classes = [IsAuthenticated]
     serializer_class = ProfileSerializer
+
+class MyProfileView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = ProfileSerializer
+
+    def get_object(self):
+        return Profile.objects.get(user_id=self.request.user)
+
+
+class UpdateMyProfileView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = ProfileSerializer
+    def get_object(self):
+        print(self.request.user)
+        return Profile.objects.get(user_id=self.request.user.pk)
