@@ -1,7 +1,6 @@
-from django.shortcuts import render
-from .serializers import ProjectSerializer, PhaseSerializer, TaskSerializer, DocumentSerializer, CommentSerializer
-from rest_framework.permissions import IsAuthenticated, IsAdminUser, AllowAny
-from .models import Project, Phase, Task, Document, Comment
+from .serializers import ProjectSerializer, PhaseSerializer, TaskSerializer, CommentSerializer
+from rest_framework.permissions import IsAuthenticated, AllowAny
+from .models import Project, Phase, Task, Comment
 from rest_framework.generics import CreateAPIView, UpdateAPIView, DestroyAPIView, RetrieveAPIView, ListAPIView
 
 
