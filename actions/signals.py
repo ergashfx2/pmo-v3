@@ -1,7 +1,6 @@
-from django.db.models.signals import post_save,post_delete
+from django.db.models.signals import post_save
 from django.dispatch import receiver
-from projects.models import Project,Phase,Document,Task
-from .models import Action
+from projects.models import Project
 from projects.middlewares.get_request import current_request
 
 @receiver(signal=post_save,sender=Project)

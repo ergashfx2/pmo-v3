@@ -1,8 +1,6 @@
 import uuid
 from projects.choices import related_choices
 from django.db import models
-
-from projects.models import Project
 from django.utils import timezone
 
 

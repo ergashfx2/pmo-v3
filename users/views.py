@@ -1,6 +1,4 @@
-from rest_framework.exceptions import PermissionDenied
-from rest_framework.views import APIView
-from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView, UpdateAPIView, DestroyAPIView
+from rest_framework.generics import ListAPIView, RetrieveAPIView, UpdateAPIView, DestroyAPIView
 from .models import Profile
 from rest_framework.permissions import IsAuthenticated
 
