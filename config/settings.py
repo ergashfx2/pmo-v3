@@ -56,13 +56,11 @@ MIDDLEWARE = [
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 CORS_ORIGIN_WHITELIST = [
     'https://pmo-v3-front.vercel.app',
-    'https://cautious-invention-x5wjrj6gqxrrfvqv-3000.app.github.dev',
-    'https://7npp3n-3000.csb.app',
+    'https://improved-chainsaw-69gjvj6x7w97crw7v-3000.app.github.dev',
+    'https://7npp3n-3000.csb.app'
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 10,
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
