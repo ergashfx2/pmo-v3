@@ -54,8 +54,10 @@ MIDDLEWARE = [
     'allauth.account.middleware.AccountMiddleware',
 ]
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-CORS_ORIGIN_WHITELIST  = [
+CORS_ORIGIN_WHITELIST = [
     'https://pmo-v3-front.vercel.app',
+    'https://cautious-invention-x5wjrj6gqxrrfvqv-3000.app.github.dev',
+    'https://7npp3n-3000.csb.app',
 ]
 
 REST_FRAMEWORK = {
@@ -137,7 +139,5 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
-STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

@@ -1,15 +1,21 @@
 from django.shortcuts import render
+from requests import Response
+
 from .serializers import ProjectSerializer, PhaseSerializer, TaskSerializer, DocumentSerializer, CommentSerializer
 from rest_framework.permissions import IsAuthenticated, IsAdminUser, AllowAny
 from .models import Project, Phase, Task, Document, Comment
 from rest_framework.generics import CreateAPIView, UpdateAPIView, DestroyAPIView, RetrieveAPIView, ListAPIView
 
 
+
 class ProjectsListView(ListAPIView):
     queryset = Project.objects.all()
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
     serializer_class = ProjectSerializer
 
+    def get_queryset(self):
+        queryset = Project.objects.all()
+        return queryset
 
 
 class CreateProjectView(CreateAPIView):
@@ -52,6 +58,7 @@ class PhaseCreateView(CreateAPIView):
     queryset = Task.objects.all()
     permission_classes = [IsAuthenticated]
     serializer_class = PhaseSerializer
+
 
 class PhaseUpdateView(UpdateAPIView):
     queryset = Phase.objects.all()
