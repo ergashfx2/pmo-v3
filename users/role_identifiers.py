@@ -3,35 +3,20 @@ from django.contrib.auth.models import User
 
 def isAdmin(user):
     user = User.objects.get(pk=user.pk)
-    if user.role == 'Admin':
-        return True
-    else:
-        return False
+    return user.role == 'Admin'
 
 def isCurator(user):
     user = User.objects.get(pk=user.pk)
-    if user.role == 'Loyiha kuratori':
-        return True
-    else:
-        return False
+    return user.role == 'Loyiha kuratori'
 
 def isManager(user):
     user = User.objects.get(pk=user.pk)
-    if user.role == 'Loyiha menejeri':
-        return True
-    else:
-        return False
+    return user.role == 'Loyiha menejeri'
 
 def isProjectOwner(user):
     user = User.objects.get(pk=user.pk)
-    if user.role == 'Loyiha egasi':
-        return True
-    else:
-        return False
+    return user.role == 'Loyiha egasi'
 
 def isSimpleUser(user):
     user = User.objects.get(pk=user.pk)
-    if user.role == 'Oddiy':
-        return True
-    else:
-        return False
+    return user.role == 'Oddiy'
